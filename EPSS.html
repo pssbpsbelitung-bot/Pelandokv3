@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BPS Belitung — Pelayanan Statistik</title>
+
+<style>
+:root{
+  --primary:#FFA94D;
+  --dark:#E5E7EB;
+  --muted:#FFF3D6;
+  --bg:#FFF8EE;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Mongolian Baiti", serif;
+  background:var(--bg);
+  color:#111;
+}
+
+/* ================= HEADER ================= */
+header{
+  background:var(--primary);
+  color:white;
+  padding:16px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.header-left{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.header-left img{height:54px}
+.header-left h1{
+  margin:0;
+  font-size:18px;
+  line-height:1.2;
+}
+
+/* ================= NAV ================= */
+nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+.dropdown{position:relative}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#003366;
+  padding:14px;
+  min-width:240px;
+  border-radius:8px;
+}
+.dropdown-content a{display:block;margin-bottom:8px}
+.dropdown:hover .dropdown-content{display:block}
+
+/* ================= HERO ================= */
+.hero{
+  background:#6b7aa3;
+  color:white;
+  padding:18px 20px;
+}
+.hero marquee p{margin:0;font-size:14px}
+
+/* ================= SECTION ================= */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:28px 18px;
+}
+
+/* ================= AI ROW ================= */
+.ai-row{
+  background:white;
+  border-radius:14px;
+  padding:24px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.ai-text{flex:1;min-width:260px}
+.ai-text h3{
+  margin-top:0;
+  color:var(--primary);
+}
+.ai-text p{
+  text-align:justify;
+  line-height:1.6;
+  margin-bottom:12px;
+}
+.ai-avatar{
+  max-width:260px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ================= MENU ================= */
+.menu{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  margin-top:24px;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+}
+.card h4{color:var(--primary)}
+
+/* ================= FOOTER ================= */
+footer{
+  background:var(--dark);
+  padding:18px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(min-width:900px){
+  .menu{grid-template-columns:repeat(3,1fr)}
+}
+.pdf-wrapper{
+  display:flex;
+  justify-content:center;
+}
+
+.pdf-container{
+  width:100%;
+  max-width:900px; /* biar rapi di layar besar */
+  height:50vh;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow:0 8px 24px rgba(0,0,0,.15);
+}
+
+.pdf-container iframe{
+  width:100%;
+  height:100%;
+  border:none;
+}
+@media(max-width:768px){
+  .pdf-container{
+    height:60vh;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="https://lh3.googleusercontent.com/d/1vdlWBW8aWp5JxVt4jl-oyVQpNcgWC59q">
+    <h1>
+      BADAN PUSAT STATISTIK KABUPATEN BELITUNG<br>
+      <small>EVALUASI PENYELENGGARAAN STATISTIK SEKTORAL</small>
+    </h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <div class="dropdown">
+      <a href="#">Layanan</a>
+      <div class="dropdown-content">
+        <a href="https://romantik.web.bps.go.id">Rekomendasi Statistik</a>
+        <a href="https://indah.bps.go.id">Metadata Statistik</a>
+      </div>
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=6285117390031">Pengaduan</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <marquee>
+    <p>
+      BERITA PEMBINAAN STATISTIK SEKTORAL —
+      Tonton Gi Ngulat di YouTube : <a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung"> https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung  </a> |
+      Chat SISTA di +6285117190030 |
+      Saat ini Chatbot AI sudah tersedia di Telegram dengan akun Si Pintar Belitung |
+      untuk chat langsung bisa diklik di Button Si Pintar di Down Page halaman website ini |
+    </p>
+  </marquee>
+</section>
+
+<!-- ================= EPSS ================= -->
+<section class="section">
+  <div class="ai-row">
+    <div class="ai-text">
+      <h3>Evaluasi Penyelenggaraan Statistik Sektoral (EPSS)</h3>
+
+ <p>
+Evaluasi Penyelenggaraan Statistik Sektoral (EPSS) adalah  sebuah proses penilaian oleh Badan Pusat Statistik (BPS) untuk mengukur kematangan dan kualitas penyelenggaraan statistik di Kementerian/Lembaga dan Pemerintah Daerah, yang hasilnya berupa Indeks Pembangunan Statistik (IPS) untuk mendorong tata kelola data yang baik dan mendukung kebijakan Satu Data Indonesia. </p>
+
+ <p>Badan Pusat Statistik (BPS) sebagai lembaga statistik nasional menjadi salah satu instansi penghasil data dan informasi statistik di Indonesia, berkomitmen untuk menyediakan statistik yang berkualitas. Di sisi lain BPS terus berupaya mewujudkan dan mengembangkan Sistem Statistik Nasional (SSN) berupa optimalisasi sumber daya dalam penyelenggaraan statistik agar tercipta SSN yang andal, efektif dan efisien. BPS harus meningkatkan perannya dalam aspek koordinasi, integrasi, sinkronisasi dan standardisasi (KISS) dengan seluruh penyelenggara kegiatan statistik, serta perannya sebagai Pembina dalam penyelenggaraan statistik sektoral.</p>
+
+<p>Di Indonesia, institusi dan lembaga penghasil data atau informasi statistik bukan hanya BPS. Unit kerja pemerintahan seperti Kementerian, Lembaga Non Kementerian, Instansi Daerah juga bertanggung jawab terhadap tersedianya statistik sektoral berupa data dan informasi statistik yang berkualitas. Dalam posisinya sebagai Pembina statistik, BPS perlu mengetahui seberapa besar capaian pembangunan dalam bidang perstatistikan nasional seperti diamanatkan dalam UU No 16 Tahun 1997 tentang Statistik dan Perpres 39/2019 tentang Satu Data Indonesia.</p>
+
+<p>Pemantauan dan Evaluasi Penyelenggaraan Statistik Sektoral merupakan proses penilaian terhadap pelaksanaan penyelenggaraan statistik sektoral di Instansi Pemerintah Pusat dan Pemerintah Daerah untuk menghasilkan suatu nilai Indeks Pembangunan Statistik (IPS) yang menggambarkan tingkat kematangan (maturity level) dari pelaksanaan penyelenggaraan statistik sektoral di Instansi Pemerintah Pusat dan Pemerintah Daerah.</p>
+   </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="ai-row">
+    <div class="ai-text">
+      <h3>Dasar Hukum Pelaksanaan Evaluasi Penyelenggaraan Statistik Sektoral</h3>
+
+ <p>
+Peraturan Badan Pusat Statistik Nomor 3 Tahun 2022 tentang Evaluasi Penyelenggaraan Statistik Sektoral merupakan wujud komitmen BPS dalam menghasilkan Indeks Pembangunan Statistik untuk mendukung Sistem Statistik Nasional yang andal, efektif, dan efisien. Perban tersebut juga berisi pedoman dalam rangka melaksanakan penilaian penyelenggaraan Statistik Sektoral pada Instansi Pusat dan Pemerintahan Daerah.</p>
+
+<section class="section">
+  <h3 style="color:#FFA94D;text-align:center;margin-bottom:16px">
+     </h3>
+  <div class="pdf-wrapper">
+    <div class="pdf-container">
+      <iframe 
+        src="https://drive.google.com/file/d/12qXpuwYIuO3W3rmSNfWVRSoXF5NK_it3/preview"
+        allow="autoplay">
+      </iframe>
+    </div>
+  </div>
+</section> </div>
+  </div>
+</section>
+
+<!-- ================= Tujuan EPSS ================= -->
+
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Tujuan Evaluasi Penyelenggaraan Statistik Sektoral </h3>
+
+<p>Tujuan Evaluasi Penyelenggaraan Statistik Sektoral:</p>
+
+    <p>1. Mengukur capaian kemajuan penyelenggaraan Statistik Sektoral pada Instansi Pusat dan Pemerintahan Daerah.</p>
+    <p>2. Meningkatkan kualitas penyelenggaraan Statistik Sektoral pada Instansi Pusat dan Pemerintahan Daerah.</p>
+    <p>3. Meningkatkan kualitas pelayanan publik di bidang statistik pada Instansi Pusat dan Pemerintahan Daerah.</p>
+</div>
+  </div>
+</section>
+
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Manfaat Evaluasi Penyelenggaraan Statistik Sektoral: </h3>
+<p> 1. Menghasilkan data statistik yang berkualitas dan terintegrasi.</p>
+<p> 2. Mewujudkan transparansi, efisiensi, dan akuntabilitas data pemerintah.</p>
+<p> 3. Menjadi dasar perbaikan kebijakan dan program pembangunan di berbagai sektor (kesehatan, pendidikan, ekonomi). </p>
+
+</div>
+  </div>
+</section>
+
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Bagaimana Evaluasi Penyelenggaraan Statistik Sektoral Bekerja </h3>
+
+<p>Dalam menilai perkembangan kapabilitas organisasi dalam penyelenggaraan Statistik Sektoral, Badan Pusat Statistik menggunakan Capability Maturity Model (CMM). Model ini telah dikembangkan untuk mengukur berbagai tingkat kematangan lain, seperti tingkat kematangan tata kelola teknologi informasi dan komunikasi, tingkat kematangan manajemen pengetahuan, dan lain-lain.</p>
+
+<p>Tingkat kematangan kapabilitas proses merupakan pengukuran kemampuan organisasi pada suatu proses yang digunakan untuk pengukuran tingkat kematangan kebijakan, tata kelola, dan manajemen penyelenggaraan Statistik Sektoral. Tingkat kematangan kapabilitas proses diukur dengan 5 (lima) tingkatan yaitu rintisan, terkelola, terdefinisi, terpadu dan terukur, dan optimum. </p>
+</div>
+  </div>
+</section>
+
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Tingkat Kematangan Evaluasi Penyelenggaraan Statistik Sektoral</h3>
+
+<p>1. Rintisan :
+Proses penyelenggaraan Statistik Sektoral belum dilakukan oleh seluruh unit kerja dan masih bersifat ad hoc.</p>
+<p>2. Terkelola :
+Proses penyelenggaraan Statistik Sektoral telah mulai dilakukan dan dikelola oleh sebagian unit kerja.</p>
+<p>3. Terdefinisi :
+Proses Statistik Sektoral telah terdefinisi dengan standar, pedoman, dan prosedur yang jelas serta terdokumentasi.</p>
+<p>4. Terpadu dan Terukur :
+Penyelenggaraan Statistik Sektoral telah terintegrasi antar unit kerja dan terukur melalui indikator kinerja.</p>
+<p>5. Optimum
+Penyelenggaraan Statistik Sektoral berjalan optimal, berkelanjutan, berbasis kualitas, serta mendukung pengambilan kebijakan.</p>
+</div>
+  </div>
+</section>
+
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Indeks Pembangunan Statistik (IPS)</h3>
+
+<p>Indeks Pembangunan Statistik (IPS) merupakan Hasil dari Penilaian Evaluasi Penyelenggaraan Statistik Sektoral,dimana hasil IPS ini menggambarkan tingkat kematangan (maturity level) dari pelaksanaan penyelenggaraan statistik sektoral di Instansi Pemerintah Pusat dan Pemerintah Daerah.</p>
+<a href="https://epss.bps.go.id/home">Website Resmi EPSS</a>
+</div>
+  </div>
+</section>
+
+<!-- ================= IPS 2023 ================= -->
+<section class="section">
+  <h3 style="color:#FFA94D;text-align:center;margin-bottom:16px">
+    Laporan Hasil EPSS 2023 Pemerintah Daerah Kabupaten Belitung
+  </h3>
+
+  <div class="pdf-wrapper">
+    <div class="pdf-container">
+      <iframe 
+        src="https://drive.google.com/file/d/1nKpUvpcXpx4a2QLqCEMjZq3wv20Oj0wC/preview"
+        allow="autoplay">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= IPS 2024 ================= -->
+<section class="section">
+  <h3 style="color:#FFA94D;text-align:center;margin-bottom:16px">
+    Laporan Hasil EPSS 2024 Pemerintah Daerah Kabupaten Belitung
+  </h3>
+
+  <div class="pdf-wrapper">
+    <div class="pdf-container">
+      <iframe 
+        src="https://drive.google.com/file/d/1GeLbngWUY0jWC-pu4ADmZ2-VazshxNye/preview"
+        allow="autoplay">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INOVASI LaPASTI ================= -->
+  <div class="menu" style="margin-top:20px">
+    <div class="card">
+      <h4>Inovasi Pendampingan</h4>
+<a href="https://sites.google.com/view/pss1902">
+<img src="https://lh3.googleusercontent.com/d/14EyoABqrEmIn37ApEcCWVCyzspGh8EyO" alt="Logo La PASTI" style="width: 150px; height: auto;"> </a>
+	<h4>La PASTI</h4>
+      <p>Layanan Pendampingan Statistik Sektoral</p>
+    </div>
+
+<!-- ================= INOVASI Gi Ngulat Cerdas ================= -->
+    <div class="card">
+	<h4>Inovasi Literasi</h4>
+<a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung">
+<img src="https://lh3.googleusercontent.com/d/1Dz1PfmSTNhL6g0RJZjcxoGNUEDSvavGO" alt="Logo Gi Ngulat Cerdas" style="width: 100px; height: auto;"> </a>
+      <h4>Gi Ngulat (Giat Ngulik Data dan Statistik)</h4>
+      <p>Tonton Gi Ngulat di YouTube dengan klik icon Gi Ngulat</p>
+      </div>
+
+<!-- ================= INOVASI Si Pintar Belitung ================= -->
+     <div class="card">
+      <h4>Inovasi Interaktif Chatbot AI</h4> 
+<a href="https://t.me/SiPintarBelitung Belitung">
+<img src="https://lh3.googleusercontent.com/d/1v6SWdw68YPB45fnFYxNX6Y1ihJxVCUDa" alt="Logo Si Pintar" style="width: 125px; height: auto;"> </a>
+	<h4>Si Pintar Belitung</h4> 
+ <p>Dapatkan informasi tentang BPS Kabupaten Belitung disini mulai dari info umum hingga data-data penting Langsung Klik pop up di bawah </p>
+ <p> </p>
+<button onclick="openBotpress()"> Si Pintar Belitung </button>
+   </div>
+  
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 BPS Kabupaten Belitung — Semua Hak Dilindungi.
+</footer>
+
+<!-- ================= POPUP BOTPRESS ================= -->
+<div id="botpressModal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="
+    width:95%;
+    max-width:420px;
+    height:85%;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+  ">
+    <button onclick="closeBotpress()" style="
+      position:absolute;
+      top:8px;
+      right:10px;
+      background:#003366;
+      color:white;
+      border:none;
+      padding:6px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      z-index:10;
+    ">✕</button>
+
+    <iframe
+      src="https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/06/28/07/20250628070405-WV0YGLN1.json"
+      style="width:100%;height:100%;border:none;">
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openBotpress(){
+  document.getElementById('botpressModal').style.display = 'flex';
+}
+function closeBotpress(){
+  document.getElementById('botpressModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
