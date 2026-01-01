@@ -12,12 +12,25 @@
   --muted:#FFF3D6;
   --bg:#FFF8EE;
 }
-*{box-sizing:border-box}
+/* ================= BACKGROUND LOGO ================= */
 body{
   margin:0;
   font-family:system-ui, -apple-system, "Mongolian Baiti", serif;
-  background:var(--bg);
   color:#111;
+  background:var(--bg);
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background-image:url("https://lh3.googleusercontent.com/d/1GZFxcjpxvXjlzWYH_ke0KKuDel4RDLTQ");
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:90%;
+  opacity:0.06;
+  z-index:-1;
+  pointer-events:none;
 }
 
 /* ================= HEADER ================= */
