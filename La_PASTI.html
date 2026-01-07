@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BPS Belitung — Pelayanan Statistik</title>
+
+<style>
+:root{
+  --primary:#FFA94D;
+  --dark:#E5E7EB;
+  --muted:#FFF3D6;
+  --bg:#FFF8EE;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Mongolian Baiti", serif;
+  background:var(--bg);
+  color:#111;
+}
+
+/* ================= HEADER ================= */
+header{
+  background:var(--primary);
+  color:white;
+  padding:16px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.header-left{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.header-left img{height:54px}
+.header-left h1{
+  margin:0;
+  font-size:18px;
+  line-height:1.2;
+}
+
+/* ================= NAV ================= */
+nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+.dropdown{position:relative}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#003366;
+  padding:14px;
+  min-width:240px;
+  border-radius:8px;
+}
+.dropdown-content a{display:block;margin-bottom:8px}
+.dropdown:hover .dropdown-content{display:block}
+
+/* ================= HERO ================= */
+.hero{
+  background:#6b7aa3;
+  color:white;
+  padding:18px 20px;
+}
+.hero marquee p{margin:0;font-size:14px}
+
+/* ================= SECTION ================= */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:28px 18px;
+}
+
+/* ================= AI ROW ================= */
+.ai-row{
+  background:white;
+  border-radius:14px;
+  padding:24px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.ai-text{flex:1;min-width:260px}
+.ai-text h3{
+  margin-top:0;
+  color:var(--primary);
+}
+.ai-text p{
+  text-align:justify;
+  line-height:1.6;
+  margin-bottom:12px;
+}
+.ai-avatar{
+  max-width:260px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ================= MENU ================= */
+.menu{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  margin-top:24px;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+}
+.card h4{color:var(--primary)}
+
+/* ================= FOOTER ================= */
+footer{
+  background:var(--dark);
+  padding:18px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(min-width:900px){
+  .menu{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="https://lh3.googleusercontent.com/d/1vdlWBW8aWp5JxVt4jl-oyVQpNcgWC59q">
+    <h1>
+      BADAN PUSAT STATISTIK KABUPATEN BELITUNG<br>
+      <small>PELANDOK PINTAR</small>
+     </h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <div class="dropdown">
+      <a href="#">Layanan</a>
+      <div class="dropdown-content">
+        <a href="https://romantik.web.bps.go.id">Rekomendasi Statistik</a>
+        <a href="https://indah.bps.go.id">Metadata Statistik</a>
+      </div>
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=6285117390031">Pengaduan</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <marquee>
+    <p>
+      PELANDOK PINTAR " Pembinaan Lembaga Pemerintahan Daerah dan Dokumentasi Statistik Sektoral Inovasi Pendampingan, Literasi dan Interaktif" | 
+      BERITA PEMBINAAN STATISTIK SEKTORAL — |
+      Tonton Gi Ngulat di YouTube : <a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung"> https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung  </a> |
+      Chat SISTA di +6285117190030 |
+      Saat ini Chatbot AI sudah tersedia di Telegram dengan akun Si Pintar Belitung |
+      untuk chat langsung bisa diklik di Button Si Pintar di Down Page halaman website ini |
+    </p>
+  </marquee>
+</section>
+
+<!-- ================= La PASTI ================= -->
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="main-title">Inovasi La Pasti (Layanan Pendampingan Statistik Sektoral)</h3>
+	<div style="margin-top:12px">
+    <div class="ai-avatar" aria-hidden="true"> 
+<a href="PSS.html">   
+        <img src="https://lh3.googleusercontent.com/d/14EyoABqrEmIn37ApEcCWVCyzspGh8EyO" alt="Logo PSS" style="width: 175px; height: auto;"> </a> 
+    </div>  
+</div> 
+  <style>
+        .rata-kanan-kiri {
+          text-align: justify;
+        }
+      </style>
+<p class="rata-kanan-kiri"> Semula inovasi ini bernama P3K_SS (Pelayanan Pendampingan Pelayanan Kegiatan Statistik Sektoral), dengan semangat yang sama untuk 2026 kami berbenah menjadi La Pasti (Layanan Pembinaan Statistik Sektoral).</p>
+
+<p class="rata-kanan-kiri"> La PASTI adalah Inovasi Kegiatan dari Tim Pembinaan Statistik Sektoral sejak tahun 2024 sebagai bentuk Pelayanan yang sifatnya "jemput bola" untuk pelaksanaan pembinaan kegiatan statistik sektoral tentunya tanpa biaya atau Rp 0,-. </p>
+<p class="rata-kanan-kiri">
+Ada 2 Kegiatan yang dilaksanakan pada P3K_SS ini : </p>
+
+<p class="rata-kanan-kiri">
+1. Pelayanan Pendampingan.</p>
+<p class="rata-kanan-kiri">
+Layanan ini adalah bentuk utuh dari pengajaran, pengarahan atau pembinaan bagi instansi pemerintah hingga pada akhirnya mampu melaksanakan kegiatan statistik secara mandiri.
+<p class="rata-kanan-kiri">
+2. Pelayanan Konsultasi Mobile.</p>
+<p class="rata-kanan-kiri">
+Layanan Konsultasi ini dilaksanakan secara mobile yaitu ketika ada kebutuhan dari Dinas / OPD yang ingin berkonsultasi namun tidak memiliki waktu berkunjung ke BPS. Tim akan langsung datang ke Dinas / OPD memberikan pelayanan berupa konsultasi mulai dari mendengarkan keluhan dan permasalahan OPD terkait kegiatan statistik sektoral, menyampaikan dasar hukum pelaksanaan, dan kemungkinan kemungkinan solusi dari permasalahan hingga komitmen keberlanjutan konsultasi hingga nantinya akan mendampingi pelaksanaan kegiatan survei. </p>
+
+<p class="rata-kanan-kiri">  Prinsip dasar yang dianut adalah semboyan pendidikan yang dicetuskan oleh Ki Hajar Dewantara </p>
+<p class="rata-kanan-kiri"> Ing ngarsa sung tuladha, di depan memberi contoh. Prinsip ini kami aplikasikan menjadi Kegiatan Pelayanan Pendampingan , dimana kami selaku pembina data secara aktif Mendampingi Pemda Kabupaten Belitung dalam menghasilkan data yang baik. </p>
+<p class="rata-kanan-kiri"> Filter yang kami gunakan pada aplikasi ini adalah Filter GSBPM ( Generic Statistical Business Proses Managemen ), Filter Romantik dan Filter Metadata. </p>
+
+<div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="main-title">Generic Statistical Business Process Managemen </h3>
+	<div style="margin-top:12px">
+    <div class="ai-avatar2" aria-hidden="true"> 
+<a href="PSS.html">   
+        <img src="https://lh3.googleusercontent.com/d/1czQodEcn-yLECwJmNaQPui6LSOvk4EIV" alt="Logo PSS" style="width: 800px; height: auto;"> </a> 
+    </div>  
+</div> 
+<style>
+.ai-avatar img {
+    display: block;
+    margin: 0 auto;
+}
+</style>
+</section>
+
+<section class="section">
+<div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+
+<p class="rata-kanan-kiri"> Kegiatan yang dilakukan adalah benar benar hadir mendampingi bagaimana proses statistik di Pemerintah Kabupaten Belitung berjalan sesuai standar yang baik (GSBPM). Mulai dari proses perencanaan (referensinya adalah Romantik dan metadata statistik) , penyusunan instrumen, pelaksanaan lapangan, pengolahan, hingga diseminasi dan monev pelaksanaan kegiatan. </p> 
+<p class="rata-kanan-kiri"> Contoh baik yang sudah dilakukan :</p>
+<p class="rata-kanan-kiri"> 1. mendampingi Dinas PUPR dalam melaksanakan Survei STKK 2024. </p>
+<p class="rata-kanan-kiri"> 2. Mendampingi Bappeda dalam menyusun IBEI 2024. </p>
+<p class="rata-kanan-kiri"> 3. Mendampingi penyusunan indikator RPJMD 2025-2029 dalam penyusunan indeks Pembangunan Kepariwisataan Daerah (IPKD) Kabupaten Belitung.</p>
+<p class="rata-kanan-kiri"> 4. mendampingi Dinas PUPR dalam melaksanakan Survei STKK 2025. </p>
+
+</section> 
+</section>
+
+<!-- ================= yang sudah kami lakukan 2024 - 2025 ================= -->
+
+<section class="section">
+  <!-- ================= VIDEO DOKUMENTASI ================= -->
+<section class="section">
+  <div class="ai-row">
+    <div class="ai-text">
+      <h3>Video Dokumentasi Kegiatan</h3>
+      <p class="rata-kanan-kiri">
+        Berikut adalah video dokumentasi Launching Inovasi P3K_SS Kabupaten Belitung di Dinas Komunikasi dan Informatika Kabupaten Belitung.
+      </p>
+
+      <div style="
+        position:relative;
+        padding-top:56.25%;
+        margin-top:16px;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 6px 20px rgba(0,0,0,.15);
+      ">
+        <iframe src="https://drive.google.com/file/d/1b_Z5f-PEMh69pQXWuMpj-_xp-HLFLnDK/preview" 
+          style="
+            position:absolute;
+            inset:0;
+            width:100%;
+            height:100%;
+            border:0;
+          "
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+<div class="ai-row">
+    <div class="ai-text">
+      <h3>Video Dokumentasi Kegiatan</h3>
+      <p class="rata-kanan-kiri">
+        Berikut adalah video dokumentasi pelaksanaan Pendampingan STKK 2024 Dinas PUPR Kabupaten Belitung yang telah dilakukan
+        oleh BPS Kabupaten Belitung.
+      </p>
+
+      <div style="
+        position:relative;
+        padding-top:56.25%;
+        margin-top:16px;
+        border-radius:12px;
+        overflow:hidden;
+        box-shadow:0 6px 20px rgba(0,0,0,.15);
+      ">
+        <iframe src="https://drive.google.com/file/d/1RgpWzeDoTPDU7TFJsE1PZb5Nlg2Dvi-L/preview"
+          style="
+            position:absolute;
+            inset:0;
+            width:100%;
+            height:100%;
+            border:0;
+          "
+          allowfullscreen
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+      <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="main-title"></h3>
+	<div style="margin-top:12px">
+    <div class="ai-avatar" aria-hidden="true"> 
+    </div>  
+</div> 
+  <style>
+        .rata-kanan-kiri {
+          text-align: justify;
+        }
+      </style>
+<p class="rata-kanan-kiri"> Pendampingan Penyusunan Indeks Pembangunan Kepariwisataan Daerah 2025 </p>
+    <div class="menu" style="margin-top:20px">
+    <div class="card">
+      
+<a href="">
+<img src="https://lh3.googleusercontent.com/d/1v4UVG71Y8c_N6e0Q1jeLd9Hpsb9Cu452" alt="Logo La PASTI" style="width: 500px; height: auto;"> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="main-title"></h3>
+	<div style="margin-top:12px">
+    <div class="ai-avatar" aria-hidden="true"> 
+    </div>  
+</div> 
+  <style>
+        .rata-kanan-kiri {
+          text-align: justify;
+        }
+      </style>
+<p class="rata-kanan-kiri"> Pendampingan Survei Tenaga Kerja Konstruksi 2025 </p>
+    <div class="menu" style="margin-top:20px">
+    <div class="card">
+<a href="">
+<img src="https://lh3.googleusercontent.com/d/1NIdmsuhNdRec8SSd8BRDeQgrm1fdHgfB" alt="Logo La PASTI" style="width: 500px; height: auto;"> </a>
+<img src="https://lh3.googleusercontent.com/d/1q-jGVvfHWqmRphrncEhlRlkT6Jc6jOdn" alt="Logo La PASTI" style="width: 500px; height: auto;"> </a>
+<img src="https://lh3.googleusercontent.com/d/1VmxxTq757xF-aAoSV0-0mdKGnSRIXd04" alt="Logo La PASTI" style="width: 500px; height: auto;"> </a>
+<img src="https://lh3.googleusercontent.com/d/1sOPas41uCeOm-QDzZKez4q6e6OlmvL0Y" alt="Logo La PASTI" style="width: 500px; height: auto;"> </a>
+</div>
+</section>
+
+<!-- ================= SISTA ================= -->
+<section class="section">
+  <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="ai-title">Petugas Statistik Terpadu Online</h3>
+      <p>Berinteraksi dengan (Asisten Data) SISTA untuk mendapatkan panduan layanan, informasi prosedur, dan status permohonan. Jika perlu, dapat diarahkan ke petugas kami baik pesan whatsapp maupun video call. </p>
+      <div style="margin-top:12px">
+        <button type="button" onclick="window.location.href='https://api.whatsapp.com/send/?phone=6285117190030&text&type=phone_number&app_absent=0'">Chat SISTA</button>
+      </div>
+    </div>
+    <div class="ai-avatar" aria-hidden="true">
+<a href='https://api.whatsapp.com/send/?phone=6285117190030&text&type=phone_number&app_absent=0'">
+<img src="https://lh3.googleusercontent.com/d/1x7pv8JL3-nY8o5lZ521j6ldAnCS_1tuL" alt="Avatar AI" style="width: 175px; height: auto;"> </a>
+	</div>
+  </div>
+
+
+<!-- ================= INOVASI LaPASTI ================= -->
+  <div class="menu" style="margin-top:20px">
+    <div class="card">
+      <h4>Inovasi Pendampingan</h4>
+<a href="https://sites.google.com/view/pss1902">
+<img src="https://lh3.googleusercontent.com/d/14EyoABqrEmIn37ApEcCWVCyzspGh8EyO" alt="Logo La PASTI" style="width: 150px; height: auto;"> </a>
+	<h4>La PASTI</h4>
+      <p>Layanan Pendampingan Statistik Sektoral</p>
+    </div>
+
+<!-- ================= INOVASI Gi Ngulat Cerdas ================= -->
+    <div class="card">
+	<h4>Inovasi Literasi</h4>
+<a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung">
+<img src="https://lh3.googleusercontent.com/d/1Dz1PfmSTNhL6g0RJZjcxoGNUEDSvavGO" alt="Logo Gi Ngulat Cerdas" style="width: 100px; height: auto;"> </a>
+      <h4>Gi Ngulat (Giat Ngulik Data dan Statistik)</h4>
+      <p>Tonton Gi Ngulat di YouTube dengan klik icon Gi Ngulat</p>
+      </div>
+
+<!-- ================= INOVASI Si Pintar Belitung ================= -->
+     <div class="card">
+      <h4>Inovasi Interaktif Chatbot AI</h4> 
+<a href="https://t.me/SiPintarBelitung Belitung">
+<img src="https://lh3.googleusercontent.com/d/1v6SWdw68YPB45fnFYxNX6Y1ihJxVCUDa" alt="Logo Si Pintar" style="width: 125px; height: auto;"> </a>
+	<h4>Si Pintar Belitung</h4> 
+ <p>Dapatkan informasi tentang BPS Kabupaten Belitung disini mulai dari info umum hingga data-data penting Langsung Klik pop up di bawah </p>
+ <p> </p>
+<button onclick="openBotpress()"> Si Pintar Belitung </button>
+   </div>
+  
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 BPS Kabupaten Belitung — Semua Hak Dilindungi.
+</footer>
+
+<!-- ================= POPUP BOTPRESS ================= -->
+<div id="botpressModal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="
+    width:95%;
+    max-width:420px;
+    height:85%;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+  ">
+    <button onclick="closeBotpress()" style="
+      position:absolute;
+      top:8px;
+      right:10px;
+      background:#003366;
+      color:white;
+      border:none;
+      padding:6px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      z-index:10;
+    ">✕</button>
+
+    <iframe
+      src="https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/06/28/07/20250628070405-WV0YGLN1.json"
+      style="width:100%;height:100%;border:none;">
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openBotpress(){
+  document.getElementById('botpressModal').style.display = 'flex';
+}
+function closeBotpress(){
+  document.getElementById('botpressModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
