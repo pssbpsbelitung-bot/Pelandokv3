@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>BPS Belitung — Pelayanan Statistik</title>
+
+<style>
+:root{
+  --primary:#FFA94D;
+  --dark:#E5E7EB;
+  --muted:#FFF3D6;
+  --bg:#FFF8EE;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Mongolian Baiti", serif;
+  background:var(--bg);
+  color:#111;
+}
+
+/* ================= HEADER ================= */
+header{
+  background:var(--primary);
+  color:white;
+  padding:16px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.header-left{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.header-left img{height:54px}
+.header-left h1{
+  margin:0;
+  font-size:18px;
+  line-height:1.2;
+}
+
+/* ================= NAV ================= */
+nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+.dropdown{position:relative}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#003366;
+  padding:14px;
+  min-width:240px;
+  border-radius:8px;
+}
+.dropdown-content a{display:block;margin-bottom:8px}
+.dropdown:hover .dropdown-content{display:block}
+
+/* ================= HERO ================= */
+.hero{
+  background:#6b7aa3;
+  color:white;
+  padding:18px 20px;
+}
+.hero marquee p{margin:0;font-size:14px}
+
+/* ================= SECTION ================= */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:28px 18px;
+}
+
+/* ================= AI ROW ================= */
+.ai-row{
+  background:white;
+  border-radius:14px;
+  padding:24px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:24px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.ai-text{flex:1;min-width:260px}
+.ai-text h3{
+  margin-top:0;
+  color:var(--primary);
+}
+.ai-text p{
+  text-align:justify;
+  line-height:1.6;
+  margin-bottom:12px;
+}
+.ai-avatar{
+  max-width:260px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* ================= MENU ================= */
+.menu{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+  margin-top:24px;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.06);
+}
+.card h4{color:var(--primary)}
+
+/* ================= FOOTER ================= */
+footer{
+  background:var(--dark);
+  padding:18px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(min-width:900px){
+  .menu{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="https://lh3.googleusercontent.com/d/1vdlWBW8aWp5JxVt4jl-oyVQpNcgWC59q">
+    <h1>
+      BADAN PUSAT STATISTIK KABUPATEN BELITUNG<br>
+      <small>PEMBINAAN STATISTIK SEKTORAL</small>
+    </h1>
+  </div>
+
+  <nav>
+    <a href="index.html">Beranda</a>
+    <div class="dropdown">
+      <a href="#">Layanan</a>
+      <div class="dropdown-content">
+        <a href="https://romantik.web.bps.go.id">Rekomendasi Statistik</a>
+        <a href="https://indah.bps.go.id">Metadata Statistik</a>
+      </div>
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=6285117390031">Pengaduan</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <marquee>
+    <p>
+      BERITA PEMBINAAN STATISTIK SEKTORAL —
+      Tonton Gi Ngulat di YouTube : <a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung"> https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung  </a> |
+      Chat SISTA di +6285117190030 |
+      Saat ini Chatbot AI sudah tersedia di Telegram dengan akun Si Pintar Belitung |
+      untuk chat langsung bisa diklik di Button Si Pintar di Down Page halaman website ini |
+    </p>
+  </marquee>
+</section>
+
+<!-- ================= PSS ================= -->
+<section class="section">
+ <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+<h3 id="main-title"> Latar Belakang Pelaksanaan Pembinaan Statistik Sektoral </h3>
+
+<p> Berdasarkan Undang-Undang Nomor 16 Tahun 1997 tentang Statistik,
+menurut tujuan pemanfaatannya statistik terbagi menjadi statistik dasar,
+statistik sektoral, dan statistik khusus. </p>
+<p> Statistik dasar diselenggarakan olehBadan Pusat Statistik (BPS) untuk keperluan yang bersifat luas, baik bagipemerintah maupun masyarakat, lintas sektoral, berskala nasional, dan
+makro. </p>
+<p> Statistik sektoral diselenggarakan oleh instansi pusat dan/atau
+instansi daerah untuk memenuhi kebutuhan instansi tertentu dalam rangka
+penyelenggaraan urusan/tugas pemerintahan. Sedangkan statistik khusus
+diselenggarakan oleh perorangan/unsur masyarakat lainnya untuk
+memenuhi kebutuhan spesifik dunia usaha, pendidikan, sosial budaya, dan
+kepentingan lain dalam kehidupan masyarakat. </p>
+<p> Penyelenggaraan statistik
+tersebut selanjutnya diarahkan untuk mendukung pembangunan nasional
+serta mewujudkan dan mengembangkan Sistem Statistik Nasional (SSN).</p>
+<p> Data yang dihasilkan melalui penyelenggaraan kegiatan statistik
+memiliki peran penting dalam pembangunan. Data sangat diperlukan untuk
+evidence-based policy dalam setiap siklus pembangunan yang terdiri atas
+perencanaan, pelaksanaan, pengendalian, dan evaluasi pembangunan. Agar
+kebijakan yang dihasilkan berdampak positif bagi masyarakat, diperlukan
+data yang akurat, mutakhir, terpadu, dan dapat dipertanggungjawabkan. Oleh
+karena itu, penyelenggara kegiatan statistik, terutama statistik dasar dan
+sektoral, perlu memahami tentang tata cara penyelenggaraan statistik yang
+terstandar.</p>
+<p> Undang-Undang Nomor 16 Tahun 1997 tentang Statistik
+mengamanahkan BPS, sebagai lembaga negara yang bertugas dalam bidang
+perstatistikan, untuk melakukan pembinaan terhadap penyelenggara
+kegiatan statistik. </p>
+<p> Secara khusus, pembinaan statistik dijabarkan dalam
+Peraturan Pemerintah Nomor 51 Tahun 1999 tentang Penyelenggaraan
+Statistik. Peraturan tersebut mengamanatkan BPS untuk melakukan
+pembinaan statistik kepada penyelenggara kegiatan statistik, khususnya
+instansi pemerintah sebagai penyelenggara kegiatan statistik sektoral.
+Pembinaan ditujukan untuk meningkatkan kontribusi dan apresiasi
+masyarakat terhadap statistik, mengembangkan SSN, dan mendukung
+pembangunan nasional. </p>
+<p> Beberapa upaya yang dapat dilakukan dalam
+kegiatan pembinaan adalah peningkatan kemampuan sumber daya manusia
+dalam penyelenggaraan statistik, pengembangan sistem informasi statistik,
+peningkatan penguasaan ilmu pengetahuan dan teknologi yang dapat
+Petunjuk Teknis Pembinaan Statistik Sektoral
+mendukung penyelenggaraan statistik, serta peningkatan penyebarluasan
+informasi statistik.</p>
+<p> Dalam mendukung percepatan pencapaian SSN selanjutnya disusun
+Peraturan Presiden Nomor 39 Tahun 2019 tentang Satu Data Indonesia.
+Amanat sebagai pembina data statistik bagi BPS selanjutnya memberikan
+beberapa tugas dan tanggung jawab dalam pelaksanaan Satu Data Indonesia
+baik di Instansi Pusat maupun Pemerintah Daerah. Dalam peraturan tersebut
+disebutkan bahwa salah satu tugas dari pembina data adalah melakukan
+pembinaan penyelenggaraan Satu Data Indonesia sesuai dengan ketentuan
+peraturan perundang-undangan yang berlaku.</p>
+<p> Sesuai dengan amanat yang disebutkan, BPS senantiasa melakukan
+pembinaan kepada penyelenggara kegiatan statistik sektoral baik ditingkat
+pusat maupun daerah. Kegiatan Pembinaan Statistik Sektoral ini sangatlah
+beragam dan didukung oleh semua unit kerja di BPS, baik di pusat, provinsi,
+maupun kabupaten/kota. Oleh karena itu, untuk menjamin agar
+penyelenggaraan Pembinaan Statistik Sektoral dapat berjalan dengan baik
+dan terukur maka diperlukan suatu petunjuk teknis pembinaan statistik
+sektoral. </p>
+<p>
+
+<h3 id="main-title"> Dasar Hukum Pembinaan Statistik Sektoral </h3>
+
+<p> Pembinaan statistik sektoral merupakan salah satu amanah dari Undang-
+Undang Nomor 16 Tahun 1997 tentang Statistik. Secara lebih rinci, dasar
+hukum terkait pembinaan statistik sektoral meliputi:
+<p> 1. Undang-Undang Republik Indonesia Nomor 16 Tahun 1997 tentang
+Statistik
+Pasal 31 menyebutkan bahwa:
+“Badan bekerja sama dengan instansi pemerintah dan unsur masyarakat
+melakukan pembinaan terhadap penyelenggara kegiatan statistik dan
+masyarakat, agar lebih meningkatkan kontribusi dan apresiasi
+masyarakat terhadap statistik, mengembangkan Sistem Statistik Nasional,
+dan mendukung pembangunan nasional”
+<p> 2. Peraturan Pemerintah Republik Indonesia Nomor 51 Tahun 1999
+tentang Penyelenggaraan Statistik
+Ketentuan terkait pembinaan dibahas secara khusus pada pasal V
+tentang pembinaan. Pada pasal 58 ayat (1) disebutkan bahwa”
+“BPS melakukan pembinaan statistik.”
+<p> 3. Peraturan Pemerintah No. 12 Tahun 2017 tentang Pembinaan dan
+Pengawasan Penyelenggaraan Pemerintahan Daerah
+Pada pasal 3 ayat (1) disebutkan bahwa:
+“Pembinaan Penyelenggaraan Pemerintahan Daerah provinsi, dilaksanakan oleh
+Menteri, untuk pembinaan umum; dan menteri teknis/kepala lembaga pemerintah nonkementerian, untuk
+pembinaan teknis.”
+<p> 4. Peraturan Presiden Nomor 39 Tahun 2019 tentang Satu Data
+Indonesia
+Pada pasal 13 ayat (2) ditegaskan bahwa:
+“Untuk Data Statistik tingkat pusat, Pembina Data Statistik tingkat pusat
+yaitu badan yang melaksanakan tugas pemerintahan di bidang kegiatan
+statistik.”
+Sedangkan pada pasal 20 ayat (2) disebutkan bahwa:
+“Untuk Data Statistik tingkat daerah, Pembina Data Statistik tingkat
+daerah yaitu instansi vertikal badan yang melaksanakan tugas
+pemerintahan dibidang statistik di provinsi atau kabupaten/kota.”
+<p> 5. Peraturan BPS Nomor 4 Tahun 2019 tentang Norma, Standar,
+Prosedur, dan Kriteria Penyelenggaraan Statistik Sektoral oleh
+Pemerintah Daerah
+Pasal 17 menyebutkan bahwa:
+“BPS melakukan pembinaan, monitoring, dan evaluasi terhadap
+penyelenggaraan Statistik Sektoral oleh Pemerintah Daerah sesuai dengan
+ketentuan peraturan perundang-undangan.”
+<p> 6. Peraturan Badan Pusat Statistik Nomor 7 Tahun 2020 tentang
+Organisasi dan Tata Kerja Badan Pusat Statistik
+Pasal 3 menyebutkan bahwa:
+“Dalam melaksanakan sebagaimana dimaksud dalam Pasal 2, BPS
+menyelenggarakan fungsi:
+<p> a. pengkajian, penyusunan, dan perumusan kebijakan di bidang
+statistik;
+<p> b. pengkoordinasian kegiatan statistik nasional dan regional;
+Petunjuk Teknis Pembinaan Statistik Sektoral6
+<p> c. penetapan dan penyelenggaraan statistik dasar;
+<p> d. penetapan sistem statistik nasional;
+<p> e. pembinaan dan fasilitasi terhadap kegiatan instansi pemerintah di
+bidang kegiatan statistik; dan
+<p> f. penyelenggaraan pembinaan dan pelayanan administrasi umum di
+bidang perencanaan umum, ketatausahaan, organisasi, tata laksana,
+kepegawaian, keuangan, kearsipan, kehumasan, hukum,
+perlengkapan, dan rumah tangga.”
+<p> 7. Peraturan Badan Pusat Statistik Nomor 5 Tahun 2023 tentang
+Organisasi dan Tata Kerja Badan Pusat Statistik Provinsi dan
+Kabupaten/Kota
+Pasal 4 menyebutkan bahwa:
+“Dalam melaksanakan tugas sebagaimana dimaksud dalam Pasal 3, BPS
+Provinsi menyelenggarakan fungsi:
+<p> a. penyelenggaraan statistik dasar di provinsi;
+<p> b. koordinasi kegiatan fungsional dalam pelaksanaan tugas BPS
+Provinsi;
+<p> c. pelancaran dan pembinaan terhadap kegiatan instansi pemerintah di
+bidang kegiatan statistik di provinsi. “; dan
+<p> d. penyelenggaraan pembinaan dan pelayanan administrasi umum di
+bidang perencanaan, keuangan, sumber daya manusia, hubungan
+masyarakat, hukum dan organisasi, kearsipan, persandian, barang
+milik negara, perlengkapan, dan rumah tangga BPS Provinsi.”
+<p> Pasal 10 menyebutkan bahwa:
+“Dalam melaksanakan tugas sebagaimana dimaksud dalam Pasal 9, BPS
+Kabupaten/Kota menyelenggarakan fungsi:
+<p> a. penyelenggaraan statistik dasar di kabupaten/kota;
+<p> b. koordinasi kegiatan fungsional dalam pelaksanaan tugas BPS
+Kabupaten/Kota;
+<p> c. pelancaran dan pembinaan terhadap kegiatan instansi pemerintah di
+bidang kegiatan statistik di kabupaten/kota.”; dan
+<p> d. penyelenggaraan pembinan dan pelayanan administrasi umum di
+bidang perencanaan umum, ketatausahaan, organisasi dan tata
+laksana, kepegawaian, keuangan, kearsipan, persandian,
+perlengkapan, dan rumah tangga BPS Kabupaten/Kota.”
+
+<p>
+     <h3 id="main-title">Pembinaan Statistik Sektoral</h3>
+
+	<div style="margin-top:12px">
+    <div class="ai-avatar" aria-hidden="true"> 
+<a href="">   
+        <img src="https://lh3.googleusercontent.com/d/1zrfu9PGIiDVJVawVR9ANzXwxI1OvI60M" alt="Logo PSS" style="width: 200px; height: auto;"> </a> 
+    </div>  
+</div> 
+  <style>
+        .rata-tengah {
+          text-align: center;
+        }
+      </style>
+
+<p> Dalam Undang-Undang Nomor 16 Tahun 1997 tentang Statistik
+disebutkan bahwa BPS bekerja sama dengan instansi pemerintah dan unsur
+masyarakat melakukan pembinaan terhadap penyelenggara kegiatan
+statistik dalam rangka pengembangan SSN. Secara khusus BPS melakukan
+upaya-upaya pembinaan statistik, diantaranya adalah:</p>
+<p>1. meningkatkan kemampuan sumber daya manusia dalam
+penyelenggaraan statistik;
+<p>2. mengembangkan statistik sebagai ilmu;</p>
+<p>3. meningkatkan penguasaan ilmu pengetahuan dan teknologi yang dapat
+mendukung penyelenggaraan statistik;</p>
+<p>4. mewujudkan kondisi yang mendukung terbentuknya pembakuan dan
+pengembangan konsep, definisi, klasifikasi, dan ukuran-ukuran dalam
+kerangka semangat kerja sama dengan penyelenggara statistik lain;</p>
+<p>5. mengembangkan sistem informasi statistik;</p>
+<p>6. meningkatkan penyebarluasan informasi statistik;</p>
+<p>7. meningkatkan kemampuan penggunaan dan pemanfaatan hasil statistik
+yang mendukung pembangunan nasional; dan</p>
+<p>8. meningkatkan kesadaran masyarakat akan arti dan kegunaan statistik.</p>
+
+<p> Dalam Sistem Statistik Nasional terdapat aspek Koordinasi, Integrasi, Sinkronisasi, dan
+Standarisasi (KISS) yang dilakukan antar penyelenggara statistik di
+Indonesia. Pembinaan statistik merupakan salah satu upaya implementasi
+KISS dalam penyediaan data dan informasi statistik. Melalui pembinaan
+statistik, diharapkan dapat menghilangkan tumpang tindih penyediaan data
+statistik di Indonesia, terutama data-data yang dihasilkan oleh instansi pusat
+dan/atau pemerintah daerah. Secara umum, pembinaan yang dilakukan BPS
+terhadap penyelenggara kegiatan statistik sektoral adalah:</p>
+<p>1. meningkatkan kompetensi Penyelenggara Statistik Sektoral;</p>
+<p>2. meningkatkan kualitas penyelenggaraan Statistik Sektoral; dan</p>
+<p>3. menyediakan Statistik Sektoral yang berkualitas.</p>
+
+<p>Satu Data Indonesia juga mengatur terkait dengan pembinaan statistik
+sektoral kepada instansi pusat dan/atau pemerintah daerah. Peraturan
+Presiden Nomor 39 Tahun 2019 tentang Satu Data Indonesia
+mengamanahkan BPS sebagai pembina data statistik sektoral. </p>
+<p> Pembinaan
+statistik sektoral merupakan salah satu bentuk koordinasi dan kolaborasi
+bersama antara BPS dengan instansi pusat dan/atau pemerintah daerah
+dalam penyelenggaraan statistik. Harapannya dengan adanya pembinaan
+statistik sektoral, instansi pusat dan/atau pemerintah daerah mampu
+menyediakan data statistik sektoral yang berkualitas. Dalam Satu Data Indonesia, pembina data statistik dibedakan menjadi
+dua mencakup pembina data statistik tingkat pusat yaitu BPS dan pembina
+data statistik tingkat daerah yaitu BPS Provinsi dan BPS Kabupaten/Kota. Adapun tugas BPS sebagai pembina data tingkat pusat mencakup:</p>
+<p> 1. Menetapkan Standar Data yang berlaku lintas Instansi Pusat dan/atau
+Instansi Daerah.</p>
+<p> 2. Menetapkan struktur baku dan format yang baku dari metadata yang
+berlaku lintas instansi pusat dan/atau instansi daerah.</p>
+<p> 3. Memberikan rekomendasi dalam proses perencanaan pengumpulan
+Data.</p>
+<p> 4. Melakukan pemeriksaan ulang terhadap Data Prioritas.</p>
+<p> 5. Melakukan pembinaan penyelenggaraan Satu Data Indonesia sesuai
+dengan ketentuan peraturan perundang-undangan.</p>
+<p> Sedangkan pembina data tingkat daerah mempunyai tugas:</p>
+<p> 1. Memberikan rekomendasi dalam proses perencanaan pengumpulan
+data; dan</p>
+<p> 2. Melakukan pembinaan penyelenggaraan Satu Data Indonesia tingkat
+daerah sesuai dengan peraturan perundang-undangan.</p>
+
+<p>
+
+<h3 id="main-title">Kegiatan Pembinaan Statistik Sektoral</h3>
+
+<p> Pembinaan statistik sektoral menjadi bagian penting dalam upaya
+penyediaan data statistik sektoral yang berkualitas guna mendukung
+penyelesaian isu dan penyusunan kebijakan nasional. Pembinaan statistik
+sektoral menjadi komitmen jangka panjang BPS sebagai koordinator Sistem
+Statistik Nasional. Berikut ini adalah tahapan dalam pembinaan statistik
+sektoral yang dilakukan BPS:</p>
+
+<section class="section">
+  <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="ai-title">1. Persiapan</h3>
+      <p>Persiapan merupakan bagian penting dalam penyelenggaraan
+pembinaan statistik sektoral. Dengan adanya persiapan yang matang dari
+seluruh pihak, diharapkan pembinaan dapat berjalan lancar dan output yag
+diinginkan akan tercapai. </p>
+      <div style="margin-top:12px">
+        <button type="button" onclick="window.location.href='https://drive.google.com/file/d/13rbAgQZ-EutxHwSrx-SnPN_QfPyfctWw/view?usp=drive_link'">Selanjutnya</button>
+      </div>
+    </div>
+    <div class="ai-avatar" aria-hidden="true">
+<a href='https://drive.google.com/file/d/13rbAgQZ-EutxHwSrx-SnPN_QfPyfctWw/view?usp=drive_link'">
+<img src="https://lh3.googleusercontent.com/d/13rbAgQZ-EutxHwSrx-SnPN_QfPyfctWw" alt="Avatar AI" style="width: 175px; height: auto;"> </a>
+	</div>
+  </div>
+</section>	
+
+<section class="section">
+  <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="ai-title">2. Pelaksanaan</h3>
+      <p>Pembinaan statistik sektoral dilaksanakan di tingkat pusat dan daerah.
+Ketentuan mengenai penyelenggaraan pembinaan statistik sektoral adalah
+sebagai berikut:</p>
+<p>1. Pembinaan statistik sektoral kepada instansi pusat dilakukan oleh Tim
+Pembina Statistik Sektoral dari BPS, yaitu Tim Pembina Pusat.</p>
+<p>2. Pembinaan statistik sektoral kepada pemerintah provinsi dilakukan oleh
+Tim Pembina Statistik Sektoral dari BPS provinsi, yaitu Tim Pembina
+Provinsi. Dalam hal pembinaan yang membutuhkan eskalasi ke tingkat
+pusat, Tim Pembina Provinsi dapat mengajukan permohonan
+pendampingan ke Sekretariat.</p>
+<p>3. Pembinaan statistik sektoral kepada pemerintah kabupaten/kota
+dilakukan oleh Tim Pembina Statistik Sektoral dari BPS kabupaten/kota,
+yaitu Tim Pembina Kabupaten/Kota. Dalam hal pembinaan yang
+membutuhkan eskalasi ke jenjang yang lebih tinggi, Tim Pembina
+Kabupaten/Kota dapat mengajukan permohonan pendampingan secara
+berjenjang. </p>
+      <div style="margin-top:12px">
+        <button type="button" onclick="window.location.href='https://drive.google.com/file/d/1_hNekpqcMJ-ATWVTnAB_4YURWpBLw6KR/view?usp=drive_link'">Selanjutnya</button>
+      </div>
+    </div>
+    <div class="ai-avatar" aria-hidden="true">
+<a href='https://drive.google.com/file/d/1_hNekpqcMJ-ATWVTnAB_4YURWpBLw6KR/view?usp=drive_link'">
+<img src="https://lh3.googleusercontent.com/d/1_hNekpqcMJ-ATWVTnAB_4YURWpBLw6KR" alt="Avatar AI" style="width: 175px; height: auto;"> </a>
+	</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="ai-title">3. Pelaporan</h3>
+      <p>Pelaporan aktivitas pembinaan statistik dilakukan oleh seluruh
+pelaksana aktivitas pembinaan statistik sektoral, baik tim pembina maupun
+pegawai yang diberikan akses ke Aplikasi Pembinaan. Pelaporan pembinaan
+dilakukan melalui Aplikasi Pembinaan yang dapat diakses pada tautan : </p>
+<p>https://webapps.bps.go.id/rujukan/pembinaan/. akses ini hanya untuk akun SSO Pegawai BPS </p>
+      <div style="margin-top:12px">
+        <button type="button" onclick="window.location.href='https://webapps.bps.go.id/rujukan/pembinaan/public/home'">Selanjutnya</button>
+      </div>
+    </div>
+    <div class="ai-avatar" aria-hidden="true">
+<a href='https://drive.google.com/file/d/18GgjY1j-PKsI1x_q_RZijMYR0EHNJEn7/view?usp=drive_link'">
+<img src="https://lh3.googleusercontent.com/d/18GgjY1j-PKsI1x_q_RZijMYR0EHNJEn7" alt="Avatar AI" style="width: 175px; height: auto;"> </a>
+	</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="ai-row" role="region" aria-labelledby="ai-title">
+    <div class="ai-text">
+      <h3 id="ai-title">4. Monitoring dan Evaluasi</h3>
+      <p>Monitoring merupakan suatu kegiatan pengamatan secara seksama
+suatu keadaan atau kondisi, perilaku, atau kegiatan tertentu. Tujuan
+monitoring adalah mendapatkan data dan informasi untuk mengukur tingkat
+pencapaian dan kesesuaian antara rencana yang telah ditetapkan dengan
+hasil capaian saat dilakukan monitoring tersebut, serta dapat menjadi
+landasan dalam mengambil keputusan tindakan selanjutnya. Tindakan
+tersebut diperlukan seandainya ada hal atau kondisi yang tidak sesuai dengan
+rencana semula. Monitoring dalam konteks pembinaan statistik berarti
+pengamatan atas pelaksanaan rencana pembinaan statistik, mengidentifikasi
+permasalahan dalam pembinaan statistik, serta mengantisipasi
+permasalahan yang timbul agar dapat diambil tindakan korektif terkait
+pembinaan sedini mungkin. Dengan adanya monitoring, pembinaan statistik
+dapat dilakukan lebih efektif dengan pencapaian optimal </p>
+      <div style="margin-top:12px">
+        <button type="button" onclick="window.location.href='https://drive.google.com/file/d/1Toa-2-R6gUvtWmpLfYqHQkrW0t2YqDnD/view?usp=drive_link'">Selanjutnya</button>
+      </div>
+    </div>
+    <div class="ai-avatar" aria-hidden="true">
+<a href='https://drive.google.com/file/d/1Toa-2-R6gUvtWmpLfYqHQkrW0t2YqDnD/view?usp=drive_link'">
+<img src="https://lh3.googleusercontent.com/d/1Toa-2-R6gUvtWmpLfYqHQkrW0t2YqDnD" alt="Avatar AI" style="width: 175px; height: auto;"> </a>
+	</div>
+  </div>
+</section>
+</section>
+
+<!-- ================= INOVASI LaPASTI ================= -->
+  <div class="menu" style="margin-top:20px">
+    <div class="card">
+      <h4>Inovasi Pendampingan</h4>
+<a href="La_PASTI.html">
+<img src="https://lh3.googleusercontent.com/d/14EyoABqrEmIn37ApEcCWVCyzspGh8EyO" alt="Logo La PASTI" style="width: 150px; height: auto;"> </a>
+	<h4>La PASTI</h4>
+      <p>Layanan Pendampingan Statistik Sektoral</p>
+    </div>
+
+<!-- ================= INOVASI Gi Ngulat Cerdas ================= -->
+    <div class="card">
+	<h4>Inovasi Literasi</h4>
+<a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung">
+<img src="https://lh3.googleusercontent.com/d/1Dz1PfmSTNhL6g0RJZjcxoGNUEDSvavGO" alt="Logo Gi Ngulat Cerdas" style="width: 100px; height: auto;"> </a>
+      <h4>Gi Ngulat (Giat Ngulik Data dan Statistik)</h4>
+      <p>Tonton Gi Ngulat di YouTube dengan klik icon Gi Ngulat</p>
+      </div>
+
+<!-- ================= INOVASI Si Pintar Belitung ================= -->
+     <div class="card">
+      <h4>Inovasi Interaktif Chatbot AI</h4> 
+<a href="https://t.me/SiPintarBelitung Belitung">
+<img src="https://lh3.googleusercontent.com/d/1v6SWdw68YPB45fnFYxNX6Y1ihJxVCUDa" alt="Logo Si Pintar" style="width: 125px; height: auto;"> </a>
+	<h4>Si Pintar Belitung</h4> 
+ <p>Dapatkan informasi tentang BPS Kabupaten Belitung disini mulai dari info umum hingga data-data penting Langsung Klik pop up di bawah </p>
+ <p> </p>
+<button onclick="openBotpress()"> Si Pintar Belitung </button>
+   </div>
+      </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 BPS Kabupaten Belitung — Semua Hak Dilindungi.
+</footer>
+
+<!-- ================= POPUP BOTPRESS ================= -->
+<div id="botpressModal" style="
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.6);
+  z-index:9999;
+  align-items:center;
+  justify-content:center;
+">
+  <div style="
+    width:95%;
+    max-width:420px;
+    height:85%;
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    position:relative;
+  ">
+    <button onclick="closeBotpress()" style="
+      position:absolute;
+      top:8px;
+      right:10px;
+      background:#003366;
+      color:white;
+      border:none;
+      padding:6px 10px;
+      border-radius:6px;
+      cursor:pointer;
+      z-index:10;
+    ">✕</button>
+
+    <iframe
+      src="https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/06/28/07/20250628070405-WV0YGLN1.json"
+      style="width:100%;height:100%;border:none;">
+    </iframe>
+  </div>
+</div>
+
+<script>
+function openBotpress(){
+  document.getElementById('botpressModal').style.display = 'flex';
+}
+function closeBotpress(){
+  document.getElementById('botpressModal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
