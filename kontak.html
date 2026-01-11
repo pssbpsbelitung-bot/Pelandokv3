@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kontak Kami — BPS Kabupaten Belitung</title>
+
+<style>
+:root{
+  --primary:#FFA94D;
+  --dark:#E5E7EB;
+  --muted:#FFF3D6;
+  --bg:#FFF8EE;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui, -apple-system, "Mongolian Baiti", serif;
+  background:var(--bg);
+  color:#111;
+}
+
+/* HEADER */
+header{
+  background:var(--primary);
+  color:white;
+  padding:16px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+.header-left{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.header-left img{height:54px}
+.header-left h1{
+  margin:0;
+  font-size:18px;
+  line-height:1.2;
+}
+
+/* ================= NAV ================= */
+nav{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:600;
+  padding:6px 10px;
+  border-radius:6px;
+}
+.dropdown{position:relative}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#003366;
+  padding:14px;
+  min-width:240px;
+  border-radius:8px;
+}
+.dropdown-content a{display:block;margin-bottom:8px}
+.dropdown:hover .dropdown-content{display:block}
+
+/* ================= HERO ================= */
+.hero{
+  background:#6b7aa3;
+  color:white;
+  padding:18px 20px;
+}
+.hero marquee p{margin:0;font-size:14px}
+
+/* SECTION */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:28px 18px;
+}
+
+/* CARD */
+.card{
+  background:white;
+  border-radius:14px;
+  padding:24px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+  margin-bottom:24px;
+}
+.card h2{
+  margin-top:0;
+  color:var(--primary);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+/* INFO */
+.info-item{
+  margin-bottom:14px;
+}
+.info-item strong{
+  display:block;
+  margin-bottom:4px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  background:var(--primary);
+  color:white;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  margin-top:6px;
+}
+.btn:hover{opacity:.9}
+
+/* MAP */
+.map iframe{
+  width:100%;
+  height:320px;
+  border:none;
+  border-radius:12px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--dark);
+  padding:18px;
+  text-align:center;
+  font-size:14px;
+}
+
+/* RESPONSIVE */
+@media(min-width:900px){
+  .grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-left">
+    <img src="https://lh3.googleusercontent.com/d/1vdlWBW8aWp5JxVt4jl-oyVQpNcgWC59q">
+    <h1>
+      BADAN PUSAT STATISTIK KABUPATEN BELITUNG<br>
+      <small>KONTAK</small>
+    </h1>
+  </div>
+
+ <nav>
+    <a href="index.html">Beranda</a>
+    <div class="dropdown">
+      <a href="#">Layanan</a>
+      <div class="dropdown-content">
+        <a href="https://romantik.web.bps.go.id">Rekomendasi Statistik</a>
+        <a href="https://indah.bps.go.id">Metadata Statistik</a>
+      </div>
+    </div>
+    <a href="https://api.whatsapp.com/send/?phone=6285117390031">Pengaduan</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <marquee>
+    <p>
+      PELANDOK PINTAR " Pembinaan Lembaga Pemerintahan Daerah dan Dokumentasi Statistik Sektoral Inovasi Pendampingan, Literasi dan Interaktif" | 
+      BERITA PEMBINAAN STATISTIK SEKTORAL — |
+      Tonton Gi Ngulat di YouTube : <a href="https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung"> https://www.youtube.com/results?search_query=gi+ngulat+bps+belitung  </a> |
+      Chat SISTA di +6285117190030 |
+      Saat ini Chatbot AI sudah tersedia di Telegram dengan akun Si Pintar Belitung |
+      untuk chat langsung bisa diklik di Button Si Pintar di Down Page halaman website ini |
+    </p>
+  </marquee>
+</section>
+
+<section class="section">
+  <div class="card">
+    <h2>Kontak Kami</h2>
+    <p>
+      Silakan hubungi BPS Kabupaten Belitung melalui informasi di bawah ini
+      untuk layanan statistik, konsultasi data, dan pembinaan statistik sektoral.
+    </p>
+  </div>
+
+  <div class="grid">
+    <!-- INFO KONTAK -->
+    <div class="card">
+      <h2>Informasi Kontak</h2>
+
+      <div class="info-item">
+        <strong>Alamat Kantor</strong>
+        Jl. Hasan Basri No 16 Kelurahan Lesung Batang KEcamatan Tanjungpandan, Kabupaten Belitung
+      </div>
+
+      <div class="info-item">
+        <strong></strong>
+        
+      </div>
+
+      <div class="info-item">
+        <strong>Email</strong>
+        bps1902@bps.go.id
+      </div>
+
+      <div class="info-item">
+        <strong>WhatsApp Layanan</strong>
+        <a class="btn" href="https://api.whatsapp.com/send/?phone=6285117190030" target="_blank">
+          WhatsApp SISTA
+        </a>
+      </div>
+
+      <div class="info-item">
+        <strong>Jam Layanan</strong>
+        Senin – Jumat<br>
+        08.00 – 15.30 WIB
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="card map">
+      <h2>Lokasi Kami</h2>
+      <iframe
+        src="https://www.google.com/maps?q=BPS+Kabupaten+Belitung&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+<div class="card">
+  <h2>Kirim Pesan</h2>
+  <p>Gunakan formulir ini untuk mengirim pertanyaan atau permohonan layanan statistik.</p>
+
+  <form action="mailto:bps1902@bps.go.id" method="post" enctype="text/plain">
+    <div class="info-item">
+      <strong>Nama</strong>
+      <input type="text" name="Nama" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;">
+    </div>
+
+    <div class="info-item">
+      <strong>Email</strong>
+      <input type="email" name="Email" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;">
+    </div>
+
+    <div class="info-item">
+      <strong>Pesan</strong>
+      <textarea name="Pesan" rows="5" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;"></textarea>
+    </div>
+
+    <button class="btn" type="submit">Kirim Email</button>
+  </form>
+</div>
+</section>
+
+<footer>
+  &copy; 2025 BPS Kabupaten Belitung — Semua Hak Dilindungi.
+</footer>
+
+</body>
+</html>
